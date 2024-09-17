@@ -582,6 +582,7 @@ main {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .footer-logo {
@@ -662,5 +663,165 @@ main {
   .footer-column {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+/* General responsive adjustments */
+body, html {
+  padding: 0;
+}
+
+/* Header responsiveness */
+@media (max-width: 1024px) {
+  .main-header {
+    flex-wrap: wrap;
+  }
+  
+  .logo-container {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    justify-content: center;
+  }
+  
+  .button-container {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work-hours {
+    margin-bottom: 5px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 5px 10px;
+  }
+}
+
+/* Hero section responsiveness */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 6vw;
+  }
+  
+  .hero-subtitle {
+    font-size: 3vw;
+  }
+  
+  .hero-button {
+    font-size: 3vw;
+    padding: 10px 20px;
+  }
+}
+
+/* Calendar and News section responsiveness */
+@media (max-width: 1024px) {
+  .calendar-news-section {
+    flex-direction: column;
+  }
+  
+  .calendar-container, .news-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Latest books section responsiveness */
+@media (max-width: 1024px) {
+  .book-item {
+    width: 33.33%; /* 3 books per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .book-item {
+    width: 50%; /* 2 books per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .book-item {
+    width: 100%; /* 1 book per row */
+  }
+  
+  .scroll-btn {
+    display: none; /* Hide scroll buttons on very small screens */
+  }
+}
+
+/* Children and Teens section responsiveness */
+@media (max-width: 1024px) {
+  .children-teens-section {
+    flex-direction: column;
+  }
+  
+  .image-container, .content-container {
+    flex: 0 0 100%;
+  }
+}
+
+/* Partners section responsiveness */
+@media (max-width: 768px) {
+  .partners-scroll {
+    justify-content: center;
+  }
+  
+  .partner-logo {
+    height: 30px;
+  }
+}
+
+/* Aušros alėja section responsiveness */
+@media (max-width: 1024px) {
+  .ausros-aleja-section {
+    flex-direction: column;
+  }
+  
+  .book-image, .book-info {
+    flex: 0 0 100%;
+  }
+  
+  .book-image img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+/* Footer responsiveness */
+@media (max-width: 1024px) {
+  .footer-columns {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* General responsive typography */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1, h2, h3 {
+    font-size: 1.5em;
   }
 }
